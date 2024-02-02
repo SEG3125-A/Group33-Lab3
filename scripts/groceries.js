@@ -12,63 +12,72 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 2.35
+		price: 2.35,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
 		name: "Salmon",
 		vegetarian: false,
 		glutenFree: true,
 		organic: true,
-		price: 10.00
+		price: 10.00,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
 		name: "Steak",
 		vegetarian: false,
 		glutenFree: true,
 		organic: true,
-		price: 15.00
+		price: 15.00,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
 		name: "Potatoes",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 8.00
+		price: 8.00,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
 		name: "Cereal",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 6.50
+		price: 6.50,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
 		name: "Crab",
 		vegetarian: false,
 		glutenFree: true,
 		organic: true,
-		price: 13.00
+		price: 13.00,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
 		name: "Jam",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 4.99
+		price: 4.99,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
 		name: "Chicken strips",
 		vegetarian: false,
 		glutenFree: false,
 		organic: false,
-		price: 11.20
+		price: 11.20,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
 		name: "Grape juice",
 		vegetarian: true,
 		glutenFree: false,
 		organic: true,
-		price: 7.60
+		price: 7.60,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 		
 ];
