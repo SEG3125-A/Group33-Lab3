@@ -97,7 +97,7 @@ var products = [
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-function restrictListProducts(prods, restriction1, restriction2) {
+function restrictListProducts(prods, restriction1, restriction2, restriction3) {
 	let product_names = [];
 	var hold;
 
@@ -124,7 +124,18 @@ function restrictListProducts(prods, restriction1, restriction2) {
                 ((restriction2 == "NonOrganic") && (prods[i].organic == false)) ||
                 (restriction2 == "")
             ){
+                if( // will only "use" the other condition it meets
+                ((restriction3 == "Vegetables") && (prods[i].category == "Vegetables")) ||
+                ((restriction2 == "Bakery") && (prods[i].category == "Bakery" )) ||
+		((restriction3 == "Seafood") && (prods[i].category == "Seafood")) ||
+                ((restriction3 == "Meat") && (prods[i].category == "Meat" )) ||
+		((restriction3 == "Breakfast Cereals") && (prods[i].category == "Breakfast Cereals")) ||
+                ((restriction3 == "Condiments") && (prods[i].category == "Condiments" )) ||
+		((restriction3 == "Juice") && (prods[i].category == "Juice" )) ||
+                (restriction3 == "")
+            ){
                 product_names.push(prods[i].name);
+            }
             }
         }
     }
