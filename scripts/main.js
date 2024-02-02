@@ -74,6 +74,8 @@ function populateListProductChoices(slct2) {
 
 		var image = document.createElement('img')
 		image.src = products.find(p => p.name === productName).image;
+		image.width = "200";
+		image.height = "200";
 		
 		s3.appendChild(image);
 		
