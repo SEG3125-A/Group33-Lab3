@@ -31,7 +31,6 @@ footer {
 
 ul.breadcrumb {
   padding: 8px 12px;
-  list-style: none;
   background-color: #eee;
 }
 
@@ -39,12 +38,16 @@ ul.breadcrumb {
 ul.breadcrumb li {
   display: inline;
   font-size: 20px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-style: Gabriela, Georgia, serif;
   padding: 10px;
 }
 
 ul.breadcrumb a {
   padding: 20px;
+}
+
+ul.breadcrumb a:active {
+  color: red;
 }
 
 /* Style the tab */
