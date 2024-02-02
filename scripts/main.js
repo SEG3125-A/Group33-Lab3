@@ -70,7 +70,15 @@ function populateListProductChoices(slct2) {
 		s3.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
-		s3.appendChild(document.createElement("br"));    
+		s3.appendChild(document.createElement("br"));  
+
+		var image = document.createElement('img')
+		image.src = products.find(p => p.name === productName).image;
+		
+		s3.appendChild(image);
+		
+		// create a breakline node and add in HTML DOM
+		s3.appendChild(document.createElement("br"));  
 	}
 }
 	
