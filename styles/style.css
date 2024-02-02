@@ -43,6 +43,10 @@ ul.breadcrumb li {
   padding: 10px;
 }
 
+ul.breadcrumb a {
+  padding: 20px;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
