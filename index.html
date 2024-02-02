@@ -8,11 +8,19 @@
 <body>
 <h1>The 33rd Best Grocery Shop</h1>
 <!-- Tab links, each one with an onclick event associated with it -->
-<div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-</div>
+<!-- <div class="tab"> -->
+<!--  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button> -->
+ <!-- <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button> -->
+<!--  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button> -->
+<!-- </div> -->
+
+<nav class="breadcrumb">
+  <ul>
+    <li><a href="#" class="tablinks" onclick="openInfo(event, 'Client')">Client</a></li>
+    <li><a href="#" class="tablinks" onclick="openInfo(event, 'Products')">Products</a></li>
+    <li><a href="#" class="tablinks" onclick="openInfo(event, 'Cart')">Cart</a></li>
+  </ul>
+</nav>
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
