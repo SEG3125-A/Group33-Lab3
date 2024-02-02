@@ -29,6 +29,18 @@ footer {
 	font-style: normal;
 }
 
+ul.breadcrumb {
+  padding: 8px 12px;
+  list-style: none;
+  background-color: #eee;
+}
+
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
