@@ -4,7 +4,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 1.99
+		price: 1.99,
+		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
 		name: "Bread",
