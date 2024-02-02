@@ -48,42 +48,54 @@ function populateListProductChoices(slct2) {
 	}
     var optionArray = restrictListProducts(products, s1.value, s2.value);
 
-	// for each item in the array, create a checkbox element, each containing information such as:
-	// <input type="checkbox" name="product" value="Bread">
-	// <label for="Bread">Bread/label><br>
-		
-	for (i = 0; i < optionArray.length; i++) {
-			
-		var productName = optionArray[i];
-		// create the checkbox and add in HTML DOM
-		var checkbox = document.createElement("input");
-		checkbox.type = "checkbox";
-		checkbox.name = "product";
-		checkbox.value = productName;
-		s3.appendChild(checkbox);
-		
-		// create a label for the checkbox, and also add in HTML DOM
-		var label = document.createElement('label')
-		label.htmlFor = productName;
-		var productPrice = products.find(p => p.name === productName).price;
-		label.appendChild(document.createTextNode(productName + " - $" + productPrice.toFixed(2)));
-		s3.appendChild(label);
-		
-		// create a breakline node and add in HTML DOM
-		s3.appendChild(document.createElement("br"));  
+	// Group products by category
+	var productsByCategory = {};
+	optionArray.forEach(function(product) {
+		var category = products.find(p => p.name === product).category;
+		if (!productsByCategory[category]) {
+			productsByCategory[category] = [];
+		}
+		productsByCategory[category].push(product);
+	});
 
-		var image = document.createElement('img')
-		image.src = products.find(p => p.name === productName).image;
-		image.style = "width:200px;height:200px";
+	// Create a checkbox list for each category
+    for (var category in productsByCategory) {
+        var categoryLabel = document.createElement('h3');
+        categoryLabel.textContent = category;
+        s3.appendChild(categoryLabel);
+
+        productsByCategory[category].forEach(function(productName) {
+            var productPrice = products.find(p => p.name === productName).price;
+
+            // create the checkbox and add in HTML DOM
+            var checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.name = "product";
+            checkbox.value = productName;
+            s3.appendChild(checkbox);
+
+            // create a label for the checkbox, and also add in HTML DOM
+            var label = document.createElement('label')
+            label.htmlFor = productName;
+            label.appendChild(document.createTextNode(productName + " - $" + productPrice.toFixed(2)));
+            s3.appendChild(label);
+
+			// create a breakline node and add in HTML DOM
+			s3.appendChild(document.createElement("br"));  
+
+			var image = document.createElement('img')
+			image.src = products.find(p => p.name === productName).image;
+			image.style = "width:200px;height:200px";
 		
 		
-		s3.appendChild(image);
-		
-		// create a breakline node and add in HTML DOM
-		s3.appendChild(document.createElement("br"));  
-	}
+			s3.appendChild(image);
+
+            // create a breakline node and add in HTML DOM
+            s3.appendChild(document.createElement("br"));
+        });
+    }
 }
-	
+
 // This function is called when the "Add selected items to cart" button in clicked
 // The purpose is to build the HTML to be displayed (a Paragraph) 
 // We build a paragraph to contain the list of selected items, and the total price

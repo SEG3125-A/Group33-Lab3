@@ -5,6 +5,7 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		price: 1.99,
+		category: "Vegetables",
 		image: "https://www.shutterstock.com/image-photo/packaged-labeled-broccoli-on-isolated-600nw-2099475799.jpg"
 	},
 	{
@@ -13,6 +14,7 @@ var products = [
 		glutenFree: false,
 		organic: false,
 		price: 2.35,
+		category: "Bakery",
 		image: "https://media.istockphoto.com/id/518733512/photo/bread-in-plastic-bag.jpg?s=612x612&w=0&k=20&c=irxMCjErMaMeCh1UV9t8AqsPWNkJjTEL8VFMT6rCoW8="
 	},
 	{
@@ -21,6 +23,7 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		price: 10.00,
+		category: "Seafood",
 		image: "https://thumbs.dreamstime.com/b/packaged-salmon-sale-1059933.jpg"
 	},
 	{
@@ -29,6 +32,7 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		price: 15.00,
+		category: "Meat",
 		image: "https://media.gettyimages.com/id/183889528/photo/pre-packaged-new-york-cut-boneless-steak.jpg?s=612x612&w=gi&k=20&c=hN0Ptu5tlG4oRK2hrSNiX2GXM7Bqm8e9VSNNkZNHdss="
 	},
 	{
@@ -37,6 +41,7 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		price: 8.00,
+		category: "Vegetables",
 		image: "https://www.shutterstock.com/image-photo/potatoes-bazaar-260nw-658758991.jpg"
 	},
 	{
@@ -45,6 +50,7 @@ var products = [
 		glutenFree: false,
 		organic: false,
 		price: 6.50,
+		category: "Breakfast Cereals",
 		image: "https://t3.ftcdn.net/jpg/03/06/54/08/360_F_306540879_e1fHVEmKRlVSTpI5iA6Tyg3cZG21joVD.jpg"
 	},
 	{
@@ -53,6 +59,7 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		price: 13.00,
+		category: "Seafood",
 		image: "https://www.shutterstock.com/image-photo/vacuum-packaged-peruvian-southern-king-260nw-2373884479.jpg"
 	},
 	{
@@ -61,6 +68,7 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		price: 4.99,
+		category: "Condiments",
 		image: "https://www.shutterstock.com/image-photo/homemade-strawberry-preserves-jam-mason-260nw-1976134916.jpg"
 	},
 	{
@@ -69,6 +77,7 @@ var products = [
 		glutenFree: false,
 		organic: false,
 		price: 11.20,
+		category: "Meat",
 		image: "https://media.istockphoto.com/id/925706336/photo/fried-chicken.jpg?s=612x612&w=0&k=20&c=g6qJo-ONvXeG9vVOi747vOiqP-fNg8cOxRWsODTEo7E="
 	},
 	{
@@ -77,6 +86,7 @@ var products = [
 		glutenFree: false,
 		organic: true,
 		price: 7.60,
+		category: "Juice",
 		image: "https://www.shutterstock.com/image-photo/winneconne-wi-14-august-2017-600nw-697405333.jpg"
 	},
 		
