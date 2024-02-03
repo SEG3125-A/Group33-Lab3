@@ -139,7 +139,5 @@ function getTotalPrice(chosenProducts) {
 			totalPrice += products[i].price;
 		}
 	}
-	return totalPr
-	}
 	return totalPrice;
 }
