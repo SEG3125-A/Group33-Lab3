@@ -21,3 +21,5 @@ Jam image: "https://www.shutterstock.com/image-photo/homemade-strawberry-preserv
 Chicken Strips image: "https://media.istockphoto.com/id/925706336/photo/fried-chicken.jpg?s=612x612&w=0&k=20&c=g6qJo-ONvXeG9vVOi747vOiqP-fNg8cOxRWsODTEo7E="
 
 Grape juice image: "https://www.shutterstock.com/image-photo/winneconne-wi-14-august-2017-600nw-697405333.jpg"
+
+Breadcrumbs inspired by w3schools website: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp
