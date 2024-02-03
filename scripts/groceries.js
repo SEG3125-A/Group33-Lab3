@@ -141,3 +141,6 @@ function getTotalPrice(chosenProducts) {
 	}
 	return totalPrice;
 }
+	}
+	return totalPrice;
+}
