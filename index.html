@@ -37,31 +37,17 @@
     <option value="None">Anything goes</option>
 	</select>
   <br>
-	Choose if you would like to filter by either organic or inorganic products? (optional):
+	Choose Preference (optional):
 	<select id="secondSelect" name="secondSelect" onchange="populateListProductChoices('displayProduct')">
 	  <option value=""></option>
 	  <option value="Organic">Organic</option>
 	  <option value="NonOrganic">Non-Organic</option>
 	</select>
- <br>
-	<!--
-	Choose if you would like to filter by a certain kind of food, i.e. meats or vegetables? (optional):
-	<select id="thirdSelect" name="thirdSelect" onchange="populateListProductChoices('displayProduct')">
-	  <option value=""></option>
-	  <option value="Vegetables">Vegetables</option>
-	  <option value="Bakery">Bakery Items</option>
-	  <option value="Seafood">Fish</option>
-	  <option value="Meat">Meat</option>
-	  <option value="Breakfast Cereals">Breakfast Cereals</option>
-	  <option value="Condiments">Condiments</option>
-	  <option value="Juice">Juice</option>
-	</select>
-	-->
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
-  <p>We preselected products based on your Dietary selection and organic/inorganic choices.</p>
+  <p>We preselected products based on your selected Dietary Style.</p>
 	 Choose items to buy:
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
@@ -80,6 +66,10 @@
 
 </body>
 
+<footer style="display: block;">
+	<p>Website designed by Group 33 (Kaitlyn Miltimore, Amer Ammari, and Eric Germond)</p>
+</footer>
+</html>
 <footer style="display: block;">
 	<p>Website designed by Group 33 (Kaitlyn Miltimore, Amer Ammari, and Eric Germond)</p>
 </footer>
