@@ -36,7 +36,7 @@ function populateListProductChoices(slct2) {
 	// obtain a reduced list of products based on restrictions
 
 	//Sort failsafe, since first sort in groceries.js doesn't work until a swap happens.
-	/*for(let count=0;count<products.length;count=count + 1){
+	for(let count=0;count<products.length;count=count + 1){
 		for(let innerCount=count;innerCount<products.length-1;innerCount=innerCount + 1){
 			if(products[innerCount].price < products[innerCount+1].price){
 				hold = products[innerCount];
@@ -45,7 +45,7 @@ function populateListProductChoices(slct2) {
 			}
 		
 		}
-	} */
+	}
     var optionArray = restrictListProducts(products, s1.value, s2.value);
 
 	// Group products by category
@@ -121,10 +121,6 @@ function selectedItems(){
 	}
 		
 	// add paragraph and total price
-	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
-		
-}
 	c.appendChild(para);
 	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
 		
