@@ -28,7 +28,7 @@ function openInfo(evt, tabName) {
 function populateListProductChoices(slct2) {
     var s1 = document.getElementById('dietSelect');
     var s2 = document.getElementById('secondSelect');
-    var s2A = document.getElementById('thirdSelect');
+    //var s2A = document.getElementById('thirdSelect');
     var s3 = document.getElementById(slct2);
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
@@ -47,7 +47,7 @@ function populateListProductChoices(slct2) {
 		
 		}
 	}
-    var optionArray = restrictListProducts(products, s1.value, s2.value, s2A.value);
+    var optionArray = restrictListProducts(products, s1.value, s2.value/*, s2A.value*/);
 
 	// Group products by category
 	var productsByCategory = {};
