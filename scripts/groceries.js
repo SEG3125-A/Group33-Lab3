@@ -97,7 +97,7 @@ var products = [
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-function restrictListProducts(prods, restriction1, restriction2/*,restriction3*/) {
+function restrictListProducts(prods, restriction1, restriction2) {
 	let product_names = [];
 	var hold;
 
@@ -123,38 +123,8 @@ function restrictListProducts(prods, restriction1, restriction2/*,restriction3*/
                 ((restriction2 == "Organic") && (prods[i].organic == true)) ||
                 ((restriction2 == "NonOrganic") && (prods[i].organic == false)) ||
                 (restriction2 == "")
-            ){/*
-		if((restriction3 == "Vegetables") && (prods[i].category == "Vegetables")){
-			product_names.push(prods[i].name);
-		}
-		else if((restriction3 == "Bakery") && (prods[i].category == "Bakery" )){
-			product_names.push(prods[i].name);
-		}
-		else if((restriction3 == "Seafood") && (prods[i].category == "Seafood" )){
-			product_names.push(prods[i].name);
-		}
-		else if((restriction3 == "Meat") && (prods[i].category == "Meat" )){
-			product_names.push(prods[i].name);
-		}
-		else if((restriction3 == "Breakfast Cereals") && (prods[i].category == "Breakfast Cereals")){
-			product_names.push(prods[i].name);
-		}
-		else if((restriction3 == "Condiments") && (prods[i].category == "Condiments" )) {
-			product_names.push(prods[i].name);
-		}
-		else if((restriction3 == "Juice") && (prods[i].category == "Juice" )) {
-			product_names.push(prods[i].name);
-		}
-		else if((restriction3 == "Juice") && (prods[i].category == "Juice" )) {
-			product_names.push(prods[i].name);
-		}
-		else{*/
-			product_names.push(prods[i].name);
-		//}
-			
-		
-					
-                
+            ){
+                product_names.push(prods[i].name);
             }
         }
     }
@@ -168,6 +138,8 @@ function getTotalPrice(chosenProducts) {
 		if (chosenProducts.indexOf(products[i].name) > -1){
 			totalPrice += products[i].price;
 		}
+	}
+	return totalPr
 	}
 	return totalPrice;
 }
