@@ -114,7 +114,10 @@ function selectedItems(){
 	para.appendChild(document.createElement("br"));
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
-			para.appendChild(document.createTextNode(ele[i].value));
+			// displaying product name AND price
+			var productName = ele[i].value;
+			var productPrice = products.find(p => p.name === productName).price;
+			para.appendChild(document.createTextNode(productName + " - $" + productPrice.toFixed(2)));
 			para.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
 		}
@@ -122,6 +125,6 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
+	c.appendChild(document.createTextNode("Total Price is: $" + getTotalPrice(chosenProducts)));
 		
 }
