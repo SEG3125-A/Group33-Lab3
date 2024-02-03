@@ -1,7 +1,7 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 
 
-html, body, div, h1, h2, h3, p, footer {
+html, body, div, h1, h2, h3, h4, p, footer {
 	margin: 0;
   color: #333;
 }
@@ -37,20 +37,21 @@ ul.breadcrumb {
   background-color: #eee;
 }
 
-
 ul.breadcrumb li {
   display: inline;
-  font-size: 20px;
-  font-style: Gabriela, Georgia, serif;
+  font-size: 18px; 
   padding: 10px;
 }
 
 ul.breadcrumb a {
-  padding: 20px;
+  padding: 20px; 
+  text-decoration: none; 
+  color: #333; 
+  transition: color 0.3s; 
 }
 
-ul.breadcrumb a:active {
-  color: red;
+ul.breadcrumb a:hover {
+  color: #677ae7; 
 }
 
 /* Style the tab */
@@ -101,4 +102,7 @@ ul.breadcrumb a:active {
   border-color: rgba(0,0,0,0.1);
   border-top: none;
   background-color: #f8f8f8;
+  background-size: cover;
 }
+
+
