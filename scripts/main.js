@@ -125,3 +125,7 @@ function selectedItems(){
 	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
 		
 }
+	c.appendChild(para);
+	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
+		
+}
