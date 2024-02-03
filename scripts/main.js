@@ -125,6 +125,8 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is: $" + getTotalPrice(chosenProducts)));
-		
+	// making total price font bigger
+	var totalPrice = document.createElement("h4");
+	totalPrice.appendChild(document.createTextNode("Total Price is: $" + getTotalPrice(chosenProducts)));
+	c.appendChild(totalPrice);
 }
